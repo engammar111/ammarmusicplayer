@@ -5,23 +5,21 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #a1abb6;
+  background-color: rgb(227, 232, 236);
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 12px;
 }
 
 .player-container {
   height: 500px;
   width: 400px;
-  background: #e3e6e9;
+  background: #d1d5e0;
   border-radius: 20px;
   box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 }
 
-.img-container {
+.image-container {
   height: 300px;
   width: 300px;
   position: relative;
@@ -29,12 +27,11 @@ body {
   left: 50px;
 }
 
-.img-container img {
+.image-container img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
@@ -44,29 +41,25 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  font-weight: 400;
-  margin: 5px 0 0;
+  margin: 5px 0 5px 0;
+  font-weight: 350;
 }
 
-/* Progress */
 .progress-container {
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
   margin: 40px 20px;
-  height: 4px;
+  height: 6px;
   width: 90%;
 }
-
 .progress {
-  background: #242323;
+  background: rgb(93, 92, 92);
   border-radius: 5px;
   height: 100%;
-  /* change this to show progress */
-  width: 66%;
-  transition: width 0.1s linear;
+  width: 0%;
 }
 
 .duration-wrapper {
@@ -76,7 +69,6 @@ h3 {
   justify-content: space-between;
 }
 
-/* Controls */
 .player-controls {
   position: relative;
   top: -15px;
@@ -85,33 +77,19 @@ h3 {
 }
 
 .fas {
-  font-size: 30px;
+  font-size: 30x;
   color: rgb(129, 129, 129);
-  margin-right: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  user-select: none;
 }
 
-.main-button {
+.fas:hover {
+  filter: brightness(80%);
+}
+
+main-button {
   font-size: 40px;
   position: relative;
   top: 3px;
-}
-
-/* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-  .img-container {
-    left: 29px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 15px;
-  }
-
-  .player-controls {
-    top: -10px;
-    left: 100px;
-  }
 }
