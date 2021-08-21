@@ -13,17 +13,17 @@ const nextBtn = document.getElementById("next")
 const song = [
   {
     name: "Ahwak",
-    displayName: "Ahwak",
+    displayName: "Ahwak Halah",
     artist: "Abdelhalim",
   },
   {
     name: "Alnahar",
-    displayName: "Alnahar",
+    displayName: "Alnahar Halah",
     artist: "Abdelhalim",
   },
   {
     name: "Ettouba",
-    displayName: "Ettouba",
+    displayName: "Ettouba Halah",
     artist: "Abdelhalim",
   },
 ]
